@@ -4,7 +4,7 @@
  */
 
  /* 任务量更改 */
-constexpr auto kInitMark = "./data/basic/988/m0.txt";
+constexpr auto kInitMark = "./data/basic/998/m0.txt";
 constexpr auto kGoalMarking = "./data/basic/988/GoalMarking.txt";
 
 /* 数据集txt 可视化gv 信息info文件 */
