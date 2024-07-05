@@ -1,0 +1,5 @@
+Total nodes = 299
+Target nodes  = 2
+Dataset = 54
+The minimum time = 60s
+Node size = 144
