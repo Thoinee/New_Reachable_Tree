@@ -379,17 +379,17 @@ void dataCreateTxt(PetriNet& tree, const int num_place) {
 			uset.insert(son.second->id_);
 
 			// 拓展第二步
-			//if (son.second->g_ + son.second->h_ > tree.root_->h_) {
-			//	for (auto _son : son.second->sons_) {
-			//		if (uset.count(_son.second->id_)) {
-			//			continue;
-			//		}
+			if (son.second->g_ + son.second->h_ > tree.root_->h_) {
+				for (auto _son : son.second->sons_) {
+					if (uset.count(_son.second->id_)) {
+						continue;
+					}
 
-			//		// 输出一条数据
-			//		Generate(son.second);
-			//		uset.insert(son.second->id_);
-			//	}
-			//}
+					// 输出一条数据
+					Generate(son.second);
+					uset.insert(son.second->id_);
+				}
+			}
 		}
 	}
 
